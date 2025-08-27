@@ -1,5 +1,6 @@
 import { useState } from "react";
 import style from "./Cabecalho.module.css";
+import logo from '../../assets/Imagens/logo.png';
 
 const Cabecalho = () => {
   const [menuAtivo, setMenuAtivo] = useState(false);
@@ -10,7 +11,9 @@ const Cabecalho = () => {
     <div className={style.Cabecalho}>
       <nav className={style.navBar}>
         <div className={style.logo}>
-          <a href="../principal/index.html">Mobiliza Vida</a>
+          <a href="../principal/index.html">
+            <img src={logo} alt="" />
+          </a>
         </div>
 
         <ul className={`${style.menuItems} ${menuAtivo ? style.active : ""}`} role="menu" aria-hidden={!menuAtivo}>

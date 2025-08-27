@@ -1,10 +1,11 @@
-import { Cabecalho } from './components';
+import { Cabecalho, Footer } from './components';
 import './App.css';
 
 const App = () => {
   return (
     <>
       <Cabecalho />
+      <Footer />
     </>
   );
 };
